@@ -2238,3 +2238,25 @@ a:hover.back-to-top {
     border-bottom: 2px solid #412011; /* Garis bawah saat hover dan aktif */
 }
 
+.map-container {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 56.25%; /* Perbandingan aspek 16:9 (misalnya untuk video) */
+    padding-top: 30px; /* Tambahkan jarak atas jika diperlukan */
+    height: 0;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Sesuaikan lebar dengan parent container */
+    height: 100%; /* Sesuaikan tinggi dengan parent container */
+}
+
+/* Add this CSS in your stylesheet or within a <style> tag */
+.max-width-100 {
+  max-width: 100%;
+  height: auto;
+}
+
